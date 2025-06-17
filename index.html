@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حاسبة سمك الشريحة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h2>حاسبة أقصى سمك الشريحة</h2>
+
+    <label>قدرة الموتور (حصان):</label>
+    <input type="number" id="power" placeholder="مثال: 325">
+
+    <label>الكفاءة (من 0.7 إلى 0.95):</label>
+    <input type="number" step="0.01" id="efficiency" placeholder="مثال: 0.85">
+
+    <label>عرض الشريحة (مم):</label>
+    <input type="number" id="width" placeholder="مثال: 688">
+
+    <label>السرعة (متر/دقيقة):</label>
+    <input type="number" id="speed" placeholder="مثال: 5">
+
+    <label>إجهاد الخضوع (ميجا باسكال):</label>
+    <input type="number" id="yield" placeholder="مثال: 400">
+
+    <button onclick="calculate()">احسب السمك</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
